@@ -1,6 +1,12 @@
 import heritageSites from "../data/heritageSites";
 import Link from "next/link";
 
+export async function generateStaticParams() {
+  return heritageSites.map((site) => ({
+    id: site.id.toString(),
+  }));
+}
+
 export default async function SitePage({ params }) {
   const { id } = await params;
   const site = heritageSites.find((s) => s.id === id);
