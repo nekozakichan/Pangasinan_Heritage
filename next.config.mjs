@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/Pangasinan_Heritage',
+  basePath: process.env.NODE_ENV === "production" ? "/Pangasinan_Heritage" : "",
 };
 
 export default nextConfig;

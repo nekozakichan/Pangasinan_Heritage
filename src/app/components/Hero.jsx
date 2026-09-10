@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { basePath } from "../basePath";
 
 const images = [
   "/images/pangasinan-overview.jpg",
   "/images/hundred-islands.jpg",
   "/images/bolinao-lighthouse.jpg",
   "/images/balungao-hotspring.jpg",
-];
+].map((src) => `${basePath}${src}`);
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
