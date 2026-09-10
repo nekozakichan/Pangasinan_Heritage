@@ -56,7 +56,7 @@ export default function AboutPangasinan() {
         <div className="rounded-2xl overflow-hidden shadow-xl border border-white/10 h-80 md:h-[420px]">
           <iframe
             title="Map of Pangasinan"
-            src="https://www.google.com/maps?q=Pangasinan,Philippines&output=embed"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=119.65%2C15.75%2C120.55%2C16.35&layer=mapnik&marker=15.98%2C120.24"
             width="100%"
             height="100%"
             style={{ border: 0 }}
